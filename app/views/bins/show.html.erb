@@ -1,8 +1,43 @@
 <p id="notice"><%= notice %></p>
 
 <h1>
-  <%= @bin.id %>
+  <%= @bin.name %>
 </h1>
+
+<table>
+  <tr>
+    <td>
+      Radius
+    </td>
+    <td>
+      <%= @bin.radius.to_s %> inches
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Diameter
+    </td>
+    <td>
+      <%= @bin.diameter.to_s %> inches
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Total Height
+    </td>
+    <td>
+      <%= @bin.total_height.to_s %> inches
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Height To Center
+    </td>
+    <td>
+      <%= @bin.height_to_center.to_s %> inches
+    </td>
+  </tr>
+</table>
 
 <%= link_to 'Edit', edit_bin_path(@bin) %> |
 <%= link_to 'Back', bins_path %>
