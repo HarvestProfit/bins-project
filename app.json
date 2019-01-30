@@ -1,0 +1,31 @@
+{
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "heroku-redis:hobby-dev"
+  ],
+  "buildpacks": [
+    { "url": "heroku/ruby" }
+  ],
+  "env": {
+    "RACK_ENV": {
+      "description": "The Rails environment",
+      "required": true,
+      "value": "production"
+    },
+    "RAILS_ENV": {
+      "description": "The Rails environment",
+      "required": true,
+      "value": "production"
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "description": "This is enabled so you can point a CDN to your Rails app for serving static assets. Set ASSET_HOST to start using your CDN to cache static assets. Example: ASSET_HOST=abc123.cloudfront.net",
+      "required": true,
+      "value": "enabled"
+    },
+    "SECRET_KEY_BASE": {
+      "description": "The base token to use for verifying the integrity of your app's session cookies.",
+      "generator": "secret",
+      "required": true
+    }
+  }
+}
