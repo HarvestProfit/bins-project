@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  diameter: 9.99
+  total_height: 9.99
+  height_to_center: 9.99
+
+two:
+  diameter: 9.99
+  total_height: 9.99
+  height_to_center: 9.99
